@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vocab Extractor</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../static/style.css">
 </head>
 <body>
     <h1>Upload an image of a book page</h1>
-    <form id="upload-form" enctype="multipart/form-data">
+    <form id="upload-form" action="/upload" method="post" enctype="multipart/form-data">
+
         <input type="file" id="image-upload" name="image">
         <button type="submit">Extract Vocab</button>
     </form>
@@ -18,6 +19,6 @@
         <p>Upload an image to see the results.</p>
     </div>
 
-    <script src="script.js"></script>
+    <script src="../static/script.js"></script>
 </body>
 </html>
