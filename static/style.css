@@ -1,41 +1,132 @@
 body {
-    font-family: sans-serif;
-    margin: 20px;
-    background-color: #f4f4f4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
 }
 
-form {
-    background-color: #fff;
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#upload-form {
+    background: white;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
 input[type="file"] {
-    margin-bottom: 10px;
-}
-
-button {
-    background-color: #5cb85c;
-    color: white;
-    padding: 10px 15px;
-    border: none;
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 2px dashed #3498db;
     border-radius: 4px;
     cursor: pointer;
 }
 
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
 button:hover {
-    background-color: #4cae4c;
+    background-color: #2980b9;
 }
 
 #results {
-    background-color: #fff;
+    background: white;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-#results h2 {
-    margin-top: 0;
+.word-list {
+    display: grid;
+    gap: 20px;
+}
+
+.word-item {
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 15px;
+    background-color: #f8f9fa;
+}
+
+.word {
+    color: #2c3e50;
+    margin: 0 0 10px 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #3498db;
+}
+
+.meaning {
+    margin-bottom: 15px;
+}
+
+.part-of-speech {
+    color: #7f8c8d;
+    font-style: italic;
+    margin: 5px 0;
+}
+
+.definitions {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.definitions li {
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.error {
+    color: #e74c3c;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #fdf3f2;
+}
+
+.no-results {
+    text-align: center;
+    color: #7f8c8d;
+    margin: 20px 0;
+}
+
+/* Loading state */
+.processing {
+    text-align: center;
+    padding: 20px;
+}
+
+.processing h2 {
+    color: #3498db;
+    margin-bottom: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    
+    .word-list {
+        gap: 15px;
+    }
+    
+    .word-item {
+        padding: 12px;
+    }
 }
