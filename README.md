@@ -12,7 +12,7 @@ Demo pics at the end of this readme.
 - To learn to train a custom YOLO model for the recognition of underlined words
 - Set up Tesseract OCR for word detection
 - To practice the Flask framework
-- Understanding Pre-processing techniques
+- Understanding Pre-processing techniques (Denoising, CLAHE, Otsu Thresholding, etc.)
 - MADE TO MAKE MY LIFE EASIER reading tougher books
 
 ## Tech Stack
